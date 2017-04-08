@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
 
 <br />
@@ -150,3 +151,6 @@ This project would not be possible without the support by these amazing folks. [
 
 This project is licensed under the MIT license, Copyright (c) 2017 Maximilian
 Stoiber. For more information see `LICENSE.md`.
+=======
+# vanhackathon3-thinkific
+>>>>>>> 93f0a4eda470f01af9d581e8070bdd5d2932af7b

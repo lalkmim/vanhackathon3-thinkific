@@ -13,10 +13,17 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+// import { Navbar, Nav, NavItem, Grid, Row, Col } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import styled from 'styled-components';
 
 import messages from './messages';
+
+const StyledNavbar = styled(Navbar)`
+  background-color: #1b9eea;
+  height: 30px;
+`;
 
 export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -27,13 +34,14 @@ export default class App extends React.Component { // eslint-disable-line react/
   render() {
     return (
       <div>
-        <Navbar>
+        <StyledNavbar>
           <Navbar.Header>
             <Navbar.Brand>
               <LinkContainer to={{ pathname: '/' }}><FormattedMessage {...messages.header} /></LinkContainer>
+              {/* <LinkContainer to={{ pathname: '/' }}><Image src="/assets/images/thinkific_logo.png" /></LinkContainer> */}
             </Navbar.Brand>
           </Navbar.Header>
-          <Nav pullRight>
+          {/* <Nav pullRight>
             <LinkContainer to={{ pathname: '/' }}>
               <NavItem eventKey={1}>Home</NavItem>
             </LinkContainer>
@@ -49,8 +57,8 @@ export default class App extends React.Component { // eslint-disable-line react/
             <LinkContainer to={{ pathname: '/logoff' }}>
               <NavItem eventKey={5}>Logoff</NavItem>
             </LinkContainer>
-          </Nav>
-        </Navbar>
+          </Nav> */}
+        </StyledNavbar>
         {React.Children.toArray(this.props.children)}
       </div>
     );
